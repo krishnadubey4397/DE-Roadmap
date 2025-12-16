@@ -1,1 +1,2 @@
-
+How do you create and raise custom exceptions?
+firstly we would create a class of the custom exception by inheriting the Exception class and we will define the error message or logical mistake inside that class, then when the particular error condition occurs which we have defined, we raise that custom exception using the raise keyword and these custom exceptions can be handled in the same way as built-in exceptions using try and except
