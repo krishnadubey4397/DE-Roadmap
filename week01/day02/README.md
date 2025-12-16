@@ -1,1 +1,1 @@
- Create a DataExtractor class with methods to read from CSV and JSON files.
+Day 02 of DE Roadmap
