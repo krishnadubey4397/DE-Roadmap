@@ -11,6 +11,7 @@ df2 = pd.DataFrame(comment)
 df3 = (df2.groupby("postId").size().reset_index(name="comment_count"))
 
 fdf =  df1.merge(df3, left_on="id", right_on="postId", how="left")
-
+fdf = fdf[['postId','comment_count']]
+#print(fdf)
 fdf["comment_count"] = fdf["comment_count"].fillna(0)
 fdf.to_csv("postscomment_count.csv", index=False)
